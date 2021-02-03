@@ -17,7 +17,7 @@
 > and mount an ANF volume from Virtual Machines, and some practical
 > performance tuning practice.
 
--   
+
 
 -   **Learning objectives**
 
@@ -39,8 +39,7 @@
 
 -   5 minutes
 
-![](media/image1.png){width="6.167300962379702in"
-height="4.384722222222222in"}
+![fig1-anf-storage-hierarchy.png](media/fig1-anf-storage-hierarchy.png)
 
 1\) Azure NetApp Files account is primarily an administrative concept
 and is in regional scope. You will need to create an ANF account first.
@@ -75,8 +74,7 @@ involved: the 1^st^ is Service Level, which establishes the baseline
 level of performance, and the 2^nd^ is the Volume quota. You get the
 gross performance limit of the Volume by multiplying the two factors.
 
-![](media/image2.png){width="6.268055555555556in"
-height="1.4208333333333334in"}
+![fig2-anf-servicelevel-quota.png](media/fig2-anf-servicelevel-quota.png)
 
 For example:
 
@@ -119,41 +117,40 @@ Top of Form
 
 1.  What's the top-down order of Azure NetApp Files storage hierarchy:
 
-ANF Account -\> ANF Container -\> Volume
+- ANF Account -\> ANF Container -\> Volume
 
-Capacity Pool -\> ANF Account -\> Volume
+- Capacity Pool -\> ANF Account -\> Volume
 
-ANF Account -\> Capacity Pool -\> Volume
+- ANF Account -\> Capacity Pool -\> Volume
 
-ANF Account -\> Capacity Pool -\> Storage Target
+- ANF Account -\> Capacity Pool -\> Storage Target
 
 2. Your HPC applications need at least 50TiB size of file storage, and
 you would like to ensure 3,000MiB/sec in throughput. With below
 knowledge, which of the following ANF Service Level and volume quota
 would you choose?
 
-![](media/image4.png){width="3.3243055555555556in"
-height="1.4278958880139982in"}
+![fig3-anf-performance-question.png](media/fig3-anf-performance-question.png)
 
-Ultra + 25TiB
+- Ultra + 25TiB
 
-Premium + 50TiB
+- Premium + 50TiB
 
-Standard + 100Tib
+- Standard + 100Tib
 
-None of above is feasible.
+- None of above is feasible.
 
-All above are feasible.
+- All above are feasible.
 
 3. You would like to resize your ANF Volume size to reflect different
 HPC applications' performance requirements, you need to perform below
 actions to make those change effective:
 
-umount and mount the Volumes.
+- umount and mount the Volumes.
 
-Reboot all VMs connecting to Volumes.
+- Reboot all VMs connecting to Volumes.
 
-None of above, ANF will just affect performance change almost
+- None of above, ANF will just affect performance change almost
 immediately.
 
 Check your answers.
@@ -173,8 +170,7 @@ Docs](https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-fil
 
 Your ANF hierarchy will be like below:
 
-![](media/image5.png){width="4.333333333333333in"
-height="3.796441382327209in"}
+![fig4-anf-practice.png](media/fig4-anf-practice.png)
 
 After you successfully created an ANF Volume, please follow [Mount Azure
 NetApp Files volumes for virtual machines \| Microsoft
@@ -211,11 +207,9 @@ EDA, Software Builds, VDA Streaming, and Desktop VDI scenarios.
 
 Below the test results of EDA scenario:
 
-![](media/image6.png){width="5.027083333333334in"
-height="3.0805555555555557in"}
+![fig5-anf-scalability.png](media/fig5-anf-scalability.png)
 
-![](media/image7.png){width="4.544444444444444in"
-height="1.366030183727034in"}
+![fig6-anf-scalability-data.png](media/fig6-anf-scalability-data.png)
 
 You can see that by simply adding \# of Volumes to ANF, maximum
 throughput can scale linearly, and still maintaining low response time.
@@ -263,8 +257,7 @@ The charts below show latency reduced from \~2.08ms with default
 settings, to \~1.05ms with 'actimeo=60', and to \~0.7ms with both
 'actimeo=600,nocto'.
 
-![](media/image8.png){width="6.283110236220472in"
-height="1.2481594488188976in"}
+![fig7-actimeo-nocto.png](media/fig7-actimeo-nocto.png)
 
 REFERENCE: [TR-4067: NFS in NetApp ONTAP Best Practice and
 Implementation Guide](https://www.netapp.com/media/10720-tr-4067.pdf)
@@ -345,22 +338,19 @@ x.x.x.x:/vol1 /anfvol
 First let's examine the effectiveness of the 3 options we have discussed
 in previous units.
 
-![](media/image9.png){width="1.6333333333333333in"
-height="1.369705818022747in"}
+![fig8-3options.png](media/fig8-3options.png)
 
 1.  Below the FIO IOPS and Bandwidth test on random and sequential
     reads/writes. You can see those options all boost performance and
     the effectiveness can be added up.
 
-![](media/image10.png){width="6.2655008748906384in"
-height="1.167315179352581in"}
+![fig9-fio-results.png](media/fig9-fio-results.png)
 
 2.  Below the EDA workload benchmark results applying the three options,
     you can see overall throughput improved significantly while
     maintaining low response time.
 
-![](media/image11.png){width="6.113888888888889in"
-height="3.2719225721784775in"}
+![fig10-edabenchmark-abc.png](media/fig10-edabenchmark-abc.png)
 
 Other than the three options discussed above, below charts examine
 several other characteristics, including NFS version, TCP/UDP and MTU
@@ -371,12 +361,9 @@ using 4.1 if there's no specific security requirements. TCP performs
 slightly better than UDP, and no significant impact with MTU size of
 client VM.
 
-![](media/image12.png){width="4.321382327209099in"
-height="1.5833333333333333in"}![](media/image13.png){width="4.462479221347332in"
-height="2.0859284776902887in"}
-
-![](media/image14.png){width="4.310774278215223in"
-height="2.6844652230971127in"}
+![fig11-edabenchmark-nfs.png](media/fig11-edabenchmark-nfs.png)
+![fig12-edabenchmark-tcpudp.png](media/fig12-edabenchmark-tcpudp.png)
+![fig13-edabenchmark-mtu.png](media/fig13-edabenchmark-mtu.png)
 
 **Knowledge Check**
 
@@ -392,15 +379,15 @@ Top of Form
 1.  Check the option(s) which can improve overall performance when
 running EDA applications on ANF:
 
-Use 'nconnect' mount options.
+- Use 'nconnect' mount options.
 
-Use NFS 4.1 instead of NFS 3.0
+- Use NFS 4.1 instead of NFS 3.0
 
-Use 'actimeo and nocto' mount options.
+- Use 'actimeo and nocto' mount options.
 
-Fine-tune value of rsize and wsize.
+- Fine-tune value of rsize and wsize.
 
-Fine-tune sysctl.
+- Fine-tune sysctl.
 
 Check your answers.
 
