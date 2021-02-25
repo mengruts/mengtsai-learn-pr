@@ -49,8 +49,8 @@ Identify the subtasks of *module title*
     Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need know some generic performance tips running your HPC applications in Azure.
 
 5. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
-    - Learn what these 2 mount options is, and performance impact of EDA simulation
-        - Exaplnation of actimeo and nocto, and suitable scenarios to apply
+    - Learn what these 2 mount options are, and performance impact of EDA simulation
+        - Explanation of actimeo and nocto, and suitable scenarios to apply
         - A figure to show perfomance impact when applying on EDA workloads
         - Provide a reference for furthur study
     - Learn sysctl practice to improve performance
