@@ -40,7 +40,7 @@ Identify the subtasks of *module title*
 | ---- | ---- | ---- | ---- | ---- |
 | Overall suggestions | Provide architecture and overall performance suggestion of running EDA/HPC applications using Azure NetApp Files as storage solution | Kownledge Check | 1 | yes |
 | Performance tips | Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize | Kownledge Check | 1 | yes |
-| Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 1 | yes |
+| Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 2 | yes |
 
 ## Outline the units
 
@@ -68,45 +68,12 @@ Identify the subtasks of *module title*
 
     **Knowledge check**
 
-**Learn how to choose proper service lebel and volume quota when running your HPC applications on Azure NetApp Files.**
-
-(Single choice question)
-
-1.  What's the top-down order of Azure NetApp Files storage hierarchy:
-
-- ANF Account -> ANF Container -> Volume
-
-- Capacity Pool -> ANF Account -> Volume
-
-- ANF Account -> Capacity Pool -> Volume
-
-- ANF Account -> Capacity Pool -> Storage Target
-
-(Single choice question)
-
-2. A specfic HPC application need at least 50TiB size of file storage, and need to ensure 3,000MiB/sec in throughput. With below knowledge, which of the following ANF Service Level and volume quota sould be configured?
-
-- Ultra + 25TiB
-
-- Premium + 50TiB
-
-- Standard + 100Tib
-
-(Single choice question)
-
-3. When resizing ANF Volume quota to reflect different HPC applications performance requirements, what actions need to be done to make the change effective?
-
-- umount and mount the Volumes.
-
-- Reboot all VMs connecting to Volumes.
-
-- None of above, ANF will just affect performance change almost immediately.
 
 **Learn practical performance tuning tips.**
 
 (Multiple choice question)
 
-4. Check the option(s) which can improve overall performance when running EDA applications on ANF:
+1. Check the option(s) which can improve overall performance when running EDA applications on ANF:
 
 - Use 'nconnect' mount options.
 
@@ -114,13 +81,10 @@ Identify the subtasks of *module title*
 
 - Use 'actimeo and nocto' mount options.
 
-- Fine-tune value of rsize and wsize.
-
 - Fine-tune sysctl.
 
 **Summary**
-
-After the knowledge learned in the moduel, you have understood the ANF storage hierarchy and how to mount Volumes from VMs. You know how to design ANF service level and volume quota to fullfill your HPC Applications performance requirements in a cost-effective way. You also learn some generic generic performance tips when running your HPC applications in Azure.
+You learn some generic generic performance tips when running your HPC applications in Azure.
 
 ## Notes
 
