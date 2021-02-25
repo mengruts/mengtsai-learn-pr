@@ -46,7 +46,7 @@ Identify the subtasks of *module title*
 
 1. **Understand ANF performance regarding to service level and volume quota.**
     - Understand 2 key factors affecting ANF's performance.
-        - A fiture to visualize the performace regarding to service level and volume quota
+        - A figure to visualize the performace regarding to service level and volume quota
         - An example on how to configure ANF to the expected throughput
         - An example on how to calculate expected throughput from IOPS and IO sizes.
         - Reminder of real-world performance is impacted by multi-factors
@@ -56,6 +56,7 @@ Identify the subtasks of *module title*
     - Examples on choosing most cost-effective Service Level based on throughput requirements
         - Ex1: Have specific throughput requirements
         - Ex2: Have spesific IOPS requirements
+        - Online ANF performance calculator
     **Knowledge check**
 
 **Learn how to choose proper service lebel and volume quota when running your HPC applications on Azure NetApp Files.**
