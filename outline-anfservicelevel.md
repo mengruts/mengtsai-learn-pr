@@ -17,7 +17,6 @@ Azure NetApp Files
 ## Prerequisites
 
 - Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
-- Ability to set up Azure NetApp Files and create an NFS volume.
 
 ## Summary
 
