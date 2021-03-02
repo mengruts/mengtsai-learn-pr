@@ -21,7 +21,7 @@ Azure NetApp Files
 
 ## Summary
 
-Choose suitable Service Level of Azure NetApp Files based on your throughput requirements including cost considerations.
+Choose the best Service Level of Azure NetApp Files based on your throughput requirements including cost considerations.
 
 ## Learning objectives
 
