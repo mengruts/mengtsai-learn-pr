@@ -1,6 +1,6 @@
 # Title
 
-Choose the suitable Service Level of Azure NetApp Files for your HPC applications.
+Choose the best Service Level of Azure NetApp Files for your HPC applications.
 
 ## Role(s)
 
@@ -16,8 +16,8 @@ Azure NetApp Files
 
 ## Prerequisites
 
-Concepts of Storage hierarchy of Azure NetApp Files including NetApp accounts, Capacity Pool and Volumes. 
-Ability to Set up Azure NetApp Files and create an NFS volume.
+- Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
+- Ability to set up Azure NetApp Files and create an NFS volume.
 
 ## Summary
 
@@ -25,9 +25,7 @@ Choose suitable Service Level of Azure NetApp Files based on your throughput req
 
 ## Learning objectives
 
-1. Understand Service Level and Throughput Limits of Azure NetApp Files
-
-2. Cost-effective Analysis to choose suitable Service Level  
+By the end of this module, the learner should be able to choose the best Service Level of Azure NetApp Files for HPC applications.
 
 ## Chunk your content into subtasks
 
