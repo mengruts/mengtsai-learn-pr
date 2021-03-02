@@ -22,7 +22,7 @@ Azure NetApp Files
 
 ## Summary
 
-You will learn performance tips when running your HPC applications on Azure NetApp Files.
+You will learn how to improve Azure NetApp Files performance by using best practice when running EDA/HPC applications..
 
 ## Learning objectives
 
