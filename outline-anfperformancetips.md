@@ -1,6 +1,6 @@
 # Title
 
-Performance tips of running EDA/HPC Applications on Azure Netapp Files
+Improve Azure Netapp Files Performance of your EDA/HPC Applications 
 
 ## Role(s)
 
@@ -16,22 +16,18 @@ Azure NetApp Files
 
 ## Prerequisites
 
-Concepts of Storage hierarchy of Azure NetApp Files including NetApp accounts, Capacity Pool and Volumes. 
-Ability to Set up Azure NetApp Files, create a volume and mount an NFS client from a VM.
+- Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
+- Ability to set up Azure NetApp Files and create a Volume.
+- Ability to mount the Azure NetApp Files Volume from a Virtual Machine.
 
 ## Summary
 
-You will also learn performance tips when running your HPC applications on Azure NetApp Files.
+You will learn performance tips when running your HPC applications on Azure NetApp Files.
 
 ## Learning objectives
 
-1. High-level recommendations of running EDA/HPC applications using Azure NetApp Files as storage solution.
-2. Performance tips including:
-  actimeo & nocto
-	sysctl
-	nconnect
-	NFS version
-	rsize/wsize
+By the end of this module, the learner should be able to improve Azure NetApp Files performance by using best practice when running EDA/HPC applications.
+
 ## Chunk your content into subtasks
 
 Identify the subtasks of *module title*
