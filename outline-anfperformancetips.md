@@ -26,7 +26,9 @@ You will learn how to improve Azure Netapp Files Performance of your EDA/HPC App
 
 ## Learning objectives
 
-By the end of this module, the learner should be able to improve Azure Netapp Files Performance of your EDA/HPC Applications by using best practice.
+By the end of this module, the learner should be able to:
+1. List the best practices which would be able to improve Azure Netapp Files performance.
+2. Describe the performance impact of the best practices on FIO and EDA Benchmarking suite. 
 
 ## Chunk your content into subtasks
 
@@ -35,14 +37,14 @@ Identify the subtasks of *module title*
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Overall suggestions | Provide architecture and overall performance suggestion of running EDA/HPC applications using Azure NetApp Files as storage solution | Kownledge Check | 1 | yes |
-| Performance tips | Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize | Kownledge Check | 1 | yes |
-| Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 2 | yes |
+| List Performance tips | Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize | Kownledge Check | 1 | yes |
+| Describe Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 2 | yes |
 
 ## Outline the units
 
 1. **Introduction**
 
-    Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need know some generic performance tips running your HPC applications in Azure.
+    Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need list performance pracices of running your HPC applications in Azure.
 
 5. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
     - Learn what these 2 mount options are, and performance impact of EDA simulation
