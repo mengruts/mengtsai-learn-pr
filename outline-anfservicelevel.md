@@ -1,6 +1,6 @@
 # Title
 
-Choose the best Service Level of Azure NetApp Files for your HPC applications.
+Choose the best Service Level of Azure NetApp Files for your HPC applications
 
 ## Role(s)
 
@@ -16,7 +16,8 @@ Azure NetApp Files
 
 ## Prerequisites
 
-- Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
+- Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
+- Ability to set up Azure NetApp Files and create a Volume. 
 
 ## Summary
 
@@ -24,7 +25,9 @@ Choose the best Service Level of Azure NetApp Files based on your throughput req
 
 ## Learning objectives
 
-By the end of this module, the learner should be able to choose the best Service Level of Azure NetApp Files for HPC applications.
+By the end of this module, the learner should be able to:
+- Describe the factors that determine throughput limits of Azure NetApp Files volume.
+- Choose the best Service Level of Azure NetApp Files for HPC applications.
 
 ## Chunk your content into subtasks
 
@@ -32,8 +35,9 @@ Identify the subtasks of *module title*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Service Level intro | Map throghput requirements to ANF's Service Level | Knowledge Check | 1 | yes |
-| Cost-effective Analysis | Examples on choosing most cost-effective Service Level based on throughput requirements | Knowledge Check | 1 | yes |
+| Introduction | Introduce scenarios, learning objectives and prerequisites  | N/A | 1 | yes |
+| Identify the decision criteria | List and describe factos that determines throughput of Azure NetApp Files volume | N/A | 1 | yes |
+| Choose the best Service Level of Azure NetApp Files for HPC applications | Examples on choosing most cost-effective Service Level based on requirements | Knowledge Check | 2 | yes |
 
 ## Outline the units
 
