@@ -26,8 +26,8 @@ Choose the best Service Level of Azure NetApp Files based on your throughput req
 ## Learning objectives
 
 By the end of this module, the learner should be able to:
-- Describe the factors that determine throughput limits of Azure NetApp Files volume.
-- Choose the best Service Level of Azure NetApp Files for HPC applications.
+1. Describe the factors that determine throughput limits of Azure NetApp Files volume.
+2. Choose the best Service Level of Azure NetApp Files for HPC applications.
 
 ## Chunk your content into subtasks
 
@@ -36,8 +36,9 @@ Identify the subtasks of *module title*
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Introduction | Introduce scenarios, learning objectives and prerequisites  | N/A | 1 | yes |
-| Identify the decision criteria | List and describe factos that determines throughput of Azure NetApp Files volume | Knowledge Check | 1 | yes |
+| Identify the decision criteria | List and describe factors that determines throughput of Azure NetApp Files volume | Knowledge Check | 1 | yes |
 | Choose Service Level | Examples on choosing most cost-effective Service Level based on requirements | Knowledge Check | 2 | yes |
+| Summary | Summarize performance criteria, and review service level selection considerations | N/A | 1&2 | yes |
 
 ## Outline the units
 
@@ -53,12 +54,18 @@ Identify the subtasks of *module title*
         - Reminder of real-world performance is impacted by multi-factors
     **Knowledge check**
     
-3. **Choose Service Level**
+2. **Choose Service Level**
     - Examples on choosing most cost-effective Service Level based on throughput requirements
         - Ex1: Have specific throughput requirements
         - Ex2: Have spesific IOPS requirements
         - Online ANF performance calculator
     **Knowledge check**
+    
+3. **Summary**
+    - Summarize performance criteria, and review service level selection considerations
+        - Review factors that determine Azure NetApp Files volume performance
+        - Review decision criteria on HPC/EDA applications
+        - Review proecess to choose the best service level
 
 **Identify the decision criteria**
 
