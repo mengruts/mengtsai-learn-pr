@@ -43,8 +43,7 @@ Identify the subtasks of *module title*
 ## Outline the units
 
 1. **Introduction**
-
-    Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need to choose the most suitable Service Level of Azure NetApp Files based on your throughput requirements including cost considerations.
+    - Introduce scenarios, learning objectives and prerequisites
 
 1. **Identify the decision criteria**
     - Understand key factors that determine ANF's throughput performance and limits.
