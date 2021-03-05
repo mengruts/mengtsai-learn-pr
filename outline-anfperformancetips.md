@@ -25,7 +25,6 @@ Azure NetApp Files
 You will learn how to improve Azure Netapp Files Performance of your EDA/HPC Applications by using best practice.
 
 ## Learning objectives
-
 By the end of this module, the learner should be able to:
 1. List the best practices which would be able to improve Azure Netapp Files performance.
 2. Describe the performance impact of the best practices on FIO and EDA Benchmarking suite. 
@@ -53,22 +52,20 @@ Identify the subtasks of *module title*
         - Architecture of running EDA Applications on Azure NetApp Files 
         - Overall performance suggestion
 
-3. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
-    - Learn sysctl practice to improve performance
-        - sysctl example for Azure Dv4/Ev4.
-        - Provide a reference for furthur study
-    - Learn how "nconnect" mount options's performance impact of EDA simulation.
-        - Learn why "nconnect" could improve performance, and it's dependencies and limitation.
-        - Example on applying "ncoonect" on Centos/Redhat.
-    - rsize/wsize and Others
-4. **Benchmarking results**
-    - Summarize options which could significanttly or have minor/no impact of an EDA applications 
-        - A table to show FIO test resutls on above 3 options, to show it's a generic and fundametal options to improve IOPS and throughput. 
-        - A figure to show EDA benchamrking test results on above 3 options.
-        - 3 figures to show performance impact of NFS 3/4.1, TCP/UDP and # of MTU.
-
+2. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
+    - actimeo & nocto
+    - /etc/sysctl.conf
+    - nconnect
+    - NFS version
+    - rsize/wsize
+    - Others
+3. **Benchmarking results**
+    - Describe benchmarking results of FIO and SPEC EDA tools 
+        - FIO 
+        - SPEC EDA benchamrking
     **Knowledge check**
-
+4. **Summary**
+    - Summarize performance best practice  
 
 **Learn practical performance tuning tips.**
 
