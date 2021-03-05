@@ -48,17 +48,16 @@ Identify the subtasks of *module title*
 
 1. **Identify the decision criteria**
     - Understand key factors that determine ANF's throughput performance and limits.
-        - A figure to visualize the performace regarding to service level and volume quota
-        - An example on how to configure ANF to the expected throughput
-        - An example on how to calculate expected throughput from IOPS and IO sizes.
-        - Reminder of real-world performance is impacted by multi-factors
+        - Service level and Volume quota
+        - Calculate expected throughput via IOPS and IO size 
+        - Real-world performance is impacted by multi-factors
     **Knowledge check**
     
 2. **Choose Service Level**
     - Examples on choosing most cost-effective Service Level based on throughput requirements
-        - Ex1: Have specific throughput requirements
-        - Ex2: Have spesific IOPS requirements
-        - Online ANF performance calculator
+        - Specific throughput requirements
+        - Spesific IOPS requirements
+        - Cost-effective analysis
     **Knowledge check**
     
 3. **Summary**
