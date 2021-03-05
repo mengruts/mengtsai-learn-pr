@@ -1,6 +1,6 @@
 # Title
 
-Improve Azure Netapp Files Performance of your EDA/HPC Applications by using best practice.
+Improve Azure Netapp Files Performance of your EDA/HPC Applications by using best practices
 
 ## Role(s)
 
