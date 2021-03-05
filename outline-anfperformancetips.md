@@ -36,21 +36,24 @@ Identify the subtasks of *module title*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Overall suggestions | Provide architecture and overall performance suggestion of running EDA/HPC applications using Azure NetApp Files as storage solution | Kownledge Check | 1 | yes |
+| Introduction | Introduce scenarios, learning objectives and prerequisites | N/A | 1 | yes |
+| Overall performance suggestions | Provide architecture and overall performance suggestion | Kownledge Check | 1 | yes |
 | List Performance tips | Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize | Kownledge Check | 1 | yes |
-| Describe Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 2 | yes |
+| Benchmarking results | Verify performance results using FIO and SPEC EDA Benchmarking suite| Knowledge Check | 2 | yes |
+| Summary | Summarize list of best practices and applicability| Knowledge Check | 2 | yes |
 
 ## Outline the units
 
 1. **Introduction**
+- Introduce scenarios, learning objectives and prerequisites
+    - Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need list performance pracices of running your HPC applications in Azure.
 
-    Suppose you are a member of a manufacturer or semiconductor company, tasked with designing their new products or IC Chips which needs a lot of CAE (Computer Aided Engineering) or EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files (ANF) as the back-end storage solution as it provides an on-premises-like experience and performance. You will need list performance pracices of running your HPC applications in Azure.
+2. **Overall performance suggestions**
+    - Provide architecture and overall performance suggestion
+        - Architecture of running EDA Applications on Azure NetApp Files 
+        - Overall performance suggestion
 
-5. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
-    - Learn what these 2 mount options are, and performance impact of EDA simulation
-        - Explanation of actimeo and nocto, and suitable scenarios to apply
-        - A figure to show perfomance impact when applying on EDA workloads
-        - Provide a reference for furthur study
+3. **Performance tips: actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize, etc.**
     - Learn sysctl practice to improve performance
         - sysctl example for Azure Dv4/Ev4.
         - Provide a reference for furthur study
@@ -58,7 +61,7 @@ Identify the subtasks of *module title*
         - Learn why "nconnect" could improve performance, and it's dependencies and limitation.
         - Example on applying "ncoonect" on Centos/Redhat.
     - rsize/wsize and Others
-8. **Benchmarking results**
+4. **Benchmarking results**
     - Summarize options which could significanttly or have minor/no impact of an EDA applications 
         - A table to show FIO test resutls on above 3 options, to show it's a generic and fundametal options to improve IOPS and throughput. 
         - A figure to show EDA benchamrking test results on above 3 options.
