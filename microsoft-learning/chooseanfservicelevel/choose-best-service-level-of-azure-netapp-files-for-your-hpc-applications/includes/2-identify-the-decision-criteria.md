@@ -8,8 +8,15 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
-Identify the decision criteria
+
+You will need to understand the key factors that determine Azure NetApp Files performance.
+
+
+# Service Level
+
+The first important concept in determining performance with Azure NetApp Files is the Service Level. The service levels are defined and differentiated by the QoS threshold for the maximum throughput allowed on a normalized basis relative to volume quota.  
+
+Azure NetApp Files offers 3 service levels suited to different workload types: Standard, Premium, and Ultra.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,7 +27,6 @@ Identify the decision criteria
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
 TODO: add your scenario sub-task
-You will need to understand the key factors that determine Azure NetApp Files performance.
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
     Goal: State concisely what's covered in this unit
