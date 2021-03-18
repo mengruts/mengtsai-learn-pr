@@ -10,9 +10,10 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+# Introduction
+
 Azure NetApp Files is widely used as the underlying shared file-storage service in various scenarios, including High Performance Compute (HPC) infrastructure. Azure NetApp Files supports three service levels: Ultra, Premium, and Standard, which are differentiated by allowed maximum throughput. 
-TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -29,8 +30,9 @@ TODO: add a visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
-## Example scenario
-TODO: add your scenario
+
+## Scenario
+
 Suppose you are a member of a semiconductor company, tasked with designing their IC Chips which needs a lot of EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution as it provides an on-premises-like experience and performance. You will need to figure out the most optimal and cost-effective way of building and running your HPC applications in Azure.
 TODO: add a visual element
 
@@ -47,7 +49,6 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
 In this module, you will examine the decision criteria that determines Azure NetApp Files performance. Then you will map your throughput or IOPS requirements to choose the best cost-effectiveness service level.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
@@ -59,7 +60,17 @@ In this module, you will examine the decision criteria that determines Azure Net
     Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
 
  -->
-## What is the main goal?
-TODO: add your terminal learning objective
-By the end of this module, you will be able to choose the best cost-effectiveness service level of Azure NetApp Files, considering your throughput or IOPS requirements.
+
+## Learning objectives
+
+By the end of this module, you will be able to: 
+
+- Describe the factors that determine throughput limits of Azure NetApp Files volume.
+- Choose the best Service Level of Azure NetApp Files for HPC applications.
+
+## Prerequisites
+
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
+- Ability to set up Azure NetApp Files and create a Volume.
+
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
