@@ -8,7 +8,10 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+# Goal
+
+Recall that in the EDA simulation scenario. After we have identified the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. We will use Azure NetApp Files Performance Calculator to achieve this.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -18,7 +21,6 @@ TODO: add your topic sentences(s)
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-TODO: add your scenario sub-task
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -28,13 +30,11 @@ TODO: add your scenario sub-task
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: write your prose table-of-contents
 
 <!-- 4. Image (highly recommended) ----------------------------------------------------------------
 
     Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 -->
-TODO: add a visual
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -48,26 +48,37 @@ TODO: add a visual
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
+## Performance Considerations
 
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+As you have learned in previous module that, the throughput limit for a volume is determined by a combination of the service level selected and the quota assigned to the volume.
+
+And recall that the limit of maximum throughput of an Azure NetApp Files Volume is 4,500 MiB/s. At the Premium service level, a Volume quota of 70.31 TiB will provision a throughput limit that is high enough to achieve this level of performance.
+
+- 64MiB/s * 70.31 = 4,500 MiB/s
+
+That is, if we assign volume quota amounts beyond 70.31 TiB at Premium service level, additional quota will only be assigned for storing additional data, but not result in a further increase in actual throughput.
+
+Most importantly, we will also need to consider the cost structure of different service levels.
+
+### Azure NetApp Files Performance Calculator
+
+[Azure NetApp Files Performance Calculator](https://cloud.netapp.com/azure-netapp-files/tco?hs_preview=tIKQbfoF-41214739590) can be leveraged to specify your throughput or IOPS requirements to help you choose the most cost-effective service level.
+
+## Throughput requirement example
+
+An HPC application need at least 25TiB size of volume storage, and need to ensure 1,500 MiB/s in throughput.
+
+:::image type="content" source="..\media\throughputrequirement.png" alt-text="Throughput requirement example":::
+
+In this example, Premium service will be the best choice as it achieves throughput requirements and also the most cost-effective.
+
+## IOPS requirement example
+
+Another HPC application need at least 50TiB size of volume storage, and require at least 140,000 IOPS for 8KiB random read/write.
+
+:::image type="content" source="..\media\iopsrequirement.png" alt-text="Throughput requirement example":::
+
+In this case, Standard will be the best choice as it achieves that specific IOPS requirements and also the most cost-effective.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

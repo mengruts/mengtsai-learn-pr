@@ -34,7 +34,6 @@ Azure NetApp Files is widely used as the underlying shared file-storage service 
 ## Scenario
 
 Suppose you are a member of a semiconductor company, tasked with designing their IC Chips which needs a lot of EDA (Electronic Design Automation) simulation. You do not have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs. Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution as it provides an on-premises-like experience and performance. You will need to figure out the most optimal and cost-effective way of building and running your HPC applications in Azure.
-TODO: add a visual element
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
