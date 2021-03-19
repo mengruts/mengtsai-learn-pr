@@ -68,7 +68,7 @@ Most importantly, we will also need to consider the cost structure of different 
 
 An HPC application need at least 25TiB size of volume storage, and need to ensure 1,500 MiB/s in throughput.
 
-:::image type="content" source="./media/throughputrequirement.png" alt-text="Throughput requirement example":::
+:::image type="content" source="../media/throughputrequirement.png" alt-text="Throughput requirement example":::
 
 In this example, Premium service will be the best choice as it achieves throughput requirements and also the most cost-effective.
 
