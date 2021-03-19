@@ -68,17 +68,21 @@ Most importantly, we will also need to consider the cost structure of different 
 
 An HPC application need at least 25TiB size of volume storage, and need to ensure 1,500 MiB/s in throughput.
 
-:::image type="content" source="../media/throughputrequirement.png" alt-text="Throughput requirement example":::
+The output of the Performance Calculator will like:
 
-In this example, Premium service will be the best choice as it achieves throughput requirements and also the most cost-effective.
+![Throughput requirement example](../media/throughputrequirement.png)
+
+That is, in this example, Premium service will be the best choice as it achieves throughput requirements with lowest Capacity Pool cost.
 
 ## IOPS requirement example
 
 Another HPC application need at least 50TiB size of volume storage, and require at least 140,000 IOPS for 8KiB random read/write.
 
-:::image type="content" source="..\media\iopsrequirement.png" alt-text="Throughput requirement example":::
+The output of the Performance Calculator will like:
 
-In this case, Standard will be the best choice as it achieves that specific IOPS requirements and also the most cost-effective.
+![IOPS requirement example](..\media\iopsrequirement.png)
+
+In this case, Standard will be the best choice as it achieves that specific IOPS requirements and is also the most cost-effective.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
