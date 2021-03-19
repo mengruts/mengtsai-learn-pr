@@ -25,13 +25,15 @@ You will examine the key factors that determine Azure NetApp Files performance, 
 
 ## Storage Hierarchy
 
-:::image type="content" source="..\media\storagehierarchy.png" alt-text="Service Levels":::
+Below chart shows the relationships of the Azure subscription, Azure NetApp accounts, Capacity Pools, and Volumes.
 
-### Azure NetApp account(s)
+![Azure NetApp Files Storage Hierarchy](../media/storagehierarchy.png)
+
+### Azure NetApp account
 
 Azure NetApp Files account is primarily an administrative concept and is in regional scope.
 
-### Capacity Pool(s)
+### Capacity Pool
 
 A single Azure NetApp account can have up to 25 Capacity Pools. The provisioned size of each Pool can then be assigned to Volumes within it. 
 
@@ -39,7 +41,7 @@ In above example, we provisioned 4TB to Capacity Pool 1. This Pool is also assig
 
 Please note that ANF is charged based on the provisioned size of Capacity Pools. Size of Pools can vary from 4TB to 500TB each.
 
-### Volume(s)
+### Volume
 
 Volumes are the actual constructs which will be mounted from your VM(s) and being consumed. They're assigned a quota limit, which can range from 100GB to 100TB, and the total Volume capacity cannot exceed the provision size of the Capacity Pool.
 
@@ -51,7 +53,7 @@ The first important concept in determining performance with Azure NetApp Files i
 
 Azure NetApp Files offers 3 service levels suited to different workload types: Standard, Premium, and Ultra.
 
-:::image type="content" source="..\media\servicelevel.png" alt-text="Service Levels":::
+![Service Levels](../media/servicelevel.png)
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -84,13 +86,13 @@ TODO: add a visual dddd
 
 ## Performance Sizing
 
-Performance for ANF is simple to design and easy to configure. There are 2 key factors involved: the service level, which we just introduced, establishes the baseline level of performance.
+Performance for Azure NetApp Files is simple to design and easy to configure. There are 2 key factors involved: the service level, which we just introduced, establishes the baseline level of performance.
 
 The second is the Volume quota.
 
 The gross performance limit of the Volume is the product of these two factors.
 
-:::image type="content" source="..\media\performancesizing.png" alt-text="Performance Sizing":::
+![Performance Sizing](../media/performancesizing.png)
 
 Let's walk through an example:
 
@@ -115,7 +117,6 @@ How do you know the needed bandwidth of throughput? If you know both the IOPS an
 For example, if your workloads need 100,000 IOPS and have an averaged transfer size of 16KB, then the bandwidth required is 1.53 GB per second.
 
 - 100,000 IOPS * 16KB = 1,600,000 KB/s = 1.53 GB/s
-
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

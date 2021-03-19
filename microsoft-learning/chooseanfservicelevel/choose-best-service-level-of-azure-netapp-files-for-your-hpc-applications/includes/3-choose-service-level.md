@@ -80,7 +80,7 @@ Another HPC application need at least 50TiB size of volume storage, and require 
 
 The output of the Performance Calculator will like:
 
-![IOPS requirement example](..\media\iopsrequirement.png)
+![IOPS requirement example](../media/iopsrequirement.png)
 
 In this case, Standard will be the best choice as it achieves that specific IOPS requirements and is also the most cost-effective.
 

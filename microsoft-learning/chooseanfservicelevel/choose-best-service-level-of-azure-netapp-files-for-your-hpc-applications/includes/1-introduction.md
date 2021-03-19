@@ -47,7 +47,9 @@ Suppose you are a member of a semiconductor company, tasked with designing their
                 * **Route**: branch based on the sentiment score"
 
  -->
+
 ## What will we be doing?
+
 In this module, you will examine the decision criteria that determines Azure NetApp Files performance. Then you will map your throughput or IOPS requirements to choose the best cost-effectiveness service level.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
