@@ -39,47 +39,25 @@ quiz:
     - content: "Azure NetApp account -> Capacity Pool -> Storage Target"
       isCorrect: false
       explanation: "There is no Storage Target concept in Azure NetApp Files."
-  - content: ""
+  - content: "After resizing Azure NetApp Files Volume quota to reflect new performance requirements, what actions need to be done to make the change effective?"
     choices:
-    - content: ""
+    - content: "Reboot the client VMs."
+      isCorrect: false
+      explanation: "Azure NetApp Files will reflect the performance affect automatically and almost immediately."
+    - content: "Restart the Azure NetApp Files service"
+      isCorrect: false
+      explanation: "Azure NetApp Files will reflect the performance affect automatically and almost immediately."
+    - content: "Performance change will affect automatically and almost immediately."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure NetApp Files will reflect the performance affect automatically and almost immediately."
+  - content: "An HPC application need at least 20TiB size of Azure NetApp files storage, and need to ensure 1,400 MiB/s in throughput with 8KiB 50/50 random read/write. Which of the following Service Level and volume quota the best to be configured?"
     choices:
-    - content: ""
+    - content: "Standard service level with 75TiB Volume size."
+      isCorrect: false
+      explanation: "This configuration meets throughput requirement but have the highest Capacity Pool cost."
+    - content: "Premium service level with 20TiB Volume size."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "This configuration meets throughput requirement with the lowest Capacity Pool cost."
+    - content: "Ultra service level with 20TiB Volume size."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This configuration meets throughput requirement but have Capacity Pool cost not the lowest."
