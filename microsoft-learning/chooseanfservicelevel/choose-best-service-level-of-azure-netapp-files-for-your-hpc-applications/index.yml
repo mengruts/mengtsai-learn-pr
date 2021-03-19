@@ -32,6 +32,7 @@ units:
 - learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.introduction
 - learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.identify-the-decision-criteria
 - learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.choose-service-level
+- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.knowledge-check
 - learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.summary
 badge:  
   uid: learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.badge
