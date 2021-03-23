@@ -16,17 +16,17 @@ Azure NetApp Files
 
 ## Prerequisites
 
-- Learner should unserstand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes. 
 - Ability to set up Azure NetApp Files and create a Volume.
 - Ability to mount the Azure NetApp Files Volume from a Virtual Machine.
 
 ## Summary
 
-You will learn how to improve Azure Netapp Files Performance of your EDA/HPC Applications by using best practice.
+You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice.
 
 ## Learning objectives
 By the end of this module, the learner should be able to:
-1. List the best practices which would be able to improve Azure Netapp Files performance.
+1. List the best practices which would be able to improve Azure NetApp Files performance.
 2. Describe the performance impact of the best practices on FIO and EDA Benchmarking suite. 
 
 ## Chunk your content into subtasks
